@@ -74,8 +74,8 @@ function getGitCommits(date) {
                     branch = "detached";
                 }
 
-                if(branch.includes('nucleus_')) {
-                    const key = branch.replace('nucleus_', '');
+                if(branch.includes('team_')) {
+                    const key = branch.replace('team_', '');
                     if(!TICKETS_WORKED_ON.includes(key)) {
                         TICKETS_WORKED_ON.push(key);
                     }
