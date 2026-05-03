@@ -1,0 +1,25 @@
+{
+  "name": "standup-update-generator",
+  "version": "1.0.0",
+  "description": "Script that helps to generate prompt that can be used to generate your daily standup notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaheshUdvag/standup-update-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MaheshUdvag/standup-update-generator/issues"
+  },
+  "homepage": "https://github.com/MaheshUdvag/standup-update-generator#readme",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.4.2"
+  }
+}
