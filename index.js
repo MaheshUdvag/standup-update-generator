@@ -107,8 +107,8 @@ function writeUpdateMarkdown(date, ticketLines, gitCommits) {
 
 async function generateUpdatePrompt() {
     try {
-        const ticketLines = await fetchTicketingData();
         const commits = getGitCommits(dateStr);
+        const ticketLines = await fetchTicketingData();
 
         const relativePath = writeUpdateMarkdown(targetDate, ticketLines, commits || '_No commits._');
         console.log(`Prompt generated: ${relativePath}`);
