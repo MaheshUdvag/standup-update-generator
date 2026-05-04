@@ -66,7 +66,7 @@ function getGitCommits(date) {
             // Find which branches contain this specific commit hash
             let branch = "detached";
             try {
-                const branchCmd = `cd ../../Code/itildesk && git branch --contains ${hash} --format="%(refname:short)"`;
+                const branchCmd = `cd ../../Code/projectX && git branch --contains ${hash} --format="%(refname:short)"`;
                 const branches = execSync(branchCmd).toString().trim().split('\n');
                 // Filter out 'origin/' and pick the first local branch if possible
                 branch = branches.find(b => !b.includes('origin/')) || branches[0];
